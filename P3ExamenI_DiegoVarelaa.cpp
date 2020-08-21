@@ -110,6 +110,9 @@ int main()
             }
         }
         break;
+        case 3:
+        vivo=false;
+        break;
         }
     }
 }
