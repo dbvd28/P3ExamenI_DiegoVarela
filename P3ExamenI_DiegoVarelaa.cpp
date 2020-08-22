@@ -37,7 +37,7 @@ int main()
             for (int i = 0; i < pcs.size(); i++)
             {
                 cout << i << " ";
-                pcs[i]->tostring();
+                pcs[i]->toString();
                 cout << endl;
             }
             cout << "En que computadora desea ingresar:" << endl;
