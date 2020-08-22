@@ -51,7 +51,7 @@ int main()
                 int tamano = comando.size();
                 string comando_ping;
                 comando_ping = comando.substr(0, 4);
-                cout << comando_ping << endl;
+               
 
                 if (comando == "show")
                 {
@@ -60,7 +60,7 @@ int main()
                 }
                 else if (comando_ping == "ping")
                 {
-                    cout<<comando.substr(5, comando.size());
+                   
                     for (int i = 0; i < pcs.size(); i++)
                     {
                         if (pcs[i]->getip() == comando.substr(5, comando.size()))

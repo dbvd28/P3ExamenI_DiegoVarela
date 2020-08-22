@@ -135,13 +135,13 @@ public:
                 }
                 numero = (int)numero / 2;
             }
-            if (i == separador_ip2.size()-1)
+            if (i == separador_ip2.size() - 1)
             {
                 binario_separador2 = binario_separador2;
             }
             else
             {
-                binario_separador2 =  "."+binario_separador2 ;
+                binario_separador2 = "." + binario_separador2;
             }
 
         } //convertir a binario el netmask
@@ -164,13 +164,13 @@ public:
                 }
                 numero = (int)numero / 2;
             }
-            if (i == separador_netmask.size()-1)
+            if (i == separador_netmask.size() - 1)
             {
                 binario_netmask = binario_netmask;
             }
             else
             {
-                binario_netmask =  "."+binario_netmask ;
+                binario_netmask = "." + binario_netmask;
             }
         } //Sacar los unos de la netmask
         int cont_uno = 0;
@@ -181,6 +181,7 @@ public:
                 cont_uno++;
             }
         }
+        int cont = 0;
         //comparacion de ip´s
         binario_separador1 = binario_separador1.substr(0, cont_uno);
         binario_separador2 = binario_separador2.substr(0, cont_uno);
